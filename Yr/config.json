@@ -1,0 +1,4 @@
+{
+  "customProxyURL":"http://localhost/proxy/proxy.ashx",
+  "yrPolygonerURL":"https://services.arcgis.com/2JyTvMWQSnM2Vi8q/arcgis/rest/services/YR_Polygoner/FeatureServer/0"
+}

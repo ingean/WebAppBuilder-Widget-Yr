@@ -1,0 +1,22 @@
+.jimu-widget-yr .plus {  
+  color: red;
+}
+
+.jimu-widget-yr .minus {  
+  color: blue;
+}
+
+.jimu-widget-yr .temp-now {  
+  font-size: 50px;
+}
+
+.jimu-widget-yr .precipitation-now {
+  color: blue;
+  font-size: 20px;
+}
+
+.jimu-widget-yr .table-headers {
+  color: darkgray;
+  text-align: center;
+}
+

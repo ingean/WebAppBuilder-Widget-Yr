@@ -1,0 +1,15 @@
+{
+  "name": "Yr",
+  "platform": "HTML",
+  "version": "2.9",
+  "wabVersion": "2.9",
+  "author": "Geodata AS",
+  "description": "Widget displays weather information from Yr.no",
+  "copyright": "Copyright © 2018 Geodata AS. All Rights Reserved.",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasStyle": true,
+    "hasLocale": false,
+    "hasSettingPage": true
+  }
+}
