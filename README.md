@@ -11,9 +11,22 @@ folder. If you prefer to deploy the widget to a specific app only, you can copy 
 stemapp\widgets
 ``` 
 folder in a downloaded app, and configure it in the app config file.
-<p>
-The widget fetches forecast data from www.yr.no and to avoid cross origin resource blocking a proxy is needed. Esri has one available here at GitHub (https://github.com/Esri/resource-proxy).
-<p>
+
+The widget fetches forecast data from www.yr.no and to avoid cross origin resource blocking a proxy is needed. Esri has one available here at GitHub (https://github.com/Esri/resource-proxy). In my dev environment I needed to add extra header info since Web AppBuilder runs on http://localhost:3344 and my proxy on http://localhost. Add the following
+```xml
+<system.webServer>  
+  <httpProtocol>  
+    <customHeaders>  
+      <add name="Access-Control-Allow-Origin" value="*" />  
+			<add name="Access-Control-Allow-Headers" value="Authorization, Origin, X-Requested-With, Content-Type, Accept, User-Agent" />  
+			<add name="Access-Control-Allow-Methods" value="GET, POST, PUT, DELETE, OPTIONS" />  
+		</customHeaders>  
+  </httpProtocol>  
+</system.webServer>
+
+```
+to the proxy web.config file. 
+
 The widget needs to translate the map center point (in coordinates) to a yr.no placename. For this it uses a ArcGIS Polygon Feature Server created from the yr placename points using the <a href="http://pro.arcgis.com/en/pro-app/tool-reference/analysis/create-thiessen-polygons.htm">Thiessen Polygon Method.</a> By default the widget use a service hosted in ArcGIS Online.  
 
 ## Setup
