@@ -30,5 +30,8 @@ to the proxy web.config file.
 The widget needs to translate the map center point (in coordinates) to a yr.no placename. For this it uses a ArcGIS Polygon Feature Server created from the yr placename points using the <a href="http://pro.arcgis.com/en/pro-app/tool-reference/analysis/create-thiessen-polygons.htm">Thiessen Polygon Method.</a> By default the widget use a service hosted in ArcGIS Online.  
 
 ## Setup
-The widget exposes two settings for setup in ArcGIS Web AppBuilder Builder, a proxy url and url for yr placename polygons. 
+The widget supports configuration in the Web AppBuilder Builder where two settings are exposed:
+* A proxy url
+* A url for yr placename polygons
 
+The proxy url is by default set to http://localhost/proxy/proxy.ashx while the url for the yr placename polygons points to a feature service hosted in ArcGIS Online by Geodata AS.
